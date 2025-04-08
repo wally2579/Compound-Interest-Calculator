@@ -15,10 +15,10 @@ def compound_interest(principal, rate, times_compounded_per_year, years):
     return A
 
 # Example usage
-principal = 2000       # Initial amount of money
-rate = 0.10            # Annual interest rate (5%)
-times_compounded_per_year = 4  # Compounded quarterly
-years = 3              # Time in years
+principal = float(input("Please enter the principle amount you wish to invest: "))       # Initial amount of money
+rate = (float(input("Please enter the interest rate offered to you: ")))/100            # Annual interest rate in persentage (eg:5%)
+times_compounded_per_year = float(input("Please enter the the duration of time interest whether it be yearly,semi-annually or quaterly is compunded per year: "))  # Compounded quarterly
+years = float(input("Please enter the period of time(years) you wish to invest your money for: "))              # Time in years
 
 final_amount = compound_interest(principal, rate, times_compounded_per_year, years)
 print(f"The total amount after {years} years with compound interest is: ${final_amount:.2f}")
